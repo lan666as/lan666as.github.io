@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>KawalPemilu - Jaga Suara 2019</title>
+
+  <!-- twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@KawalPemilu2019">
+  <meta name="twitter:image" content="https://upload.kawalpemilu.org/assets/logo/android-icon-192x192.png">
+
+  <!-- facebook and other social sites -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="KawalPemilu - Jaga Suara 2019">
+  <meta property="og:description" content="#PantauFotoUpload suara Pemilu di TPS! Mari gotong royong, ajak teman jadi relawan KawalPemilu - Jaga Suara 2019.">
+  <meta property="og:url" content="https://kawalpemilu.org">
+  <meta property="og:image" content="https://upload.kawalpemilu.org/assets/logo/ms-icon-310x310.png">
+  <meta property="og:image:width" content="310">
+  <meta property="og:image:height" content="310">
+  <meta property="fb:app_id" content="662471847169648">
+
+  <script>
+    window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) }; ga.l = +new Date;
+    ga('create', 'UA-176039-31', '');
+    ga('send', 'pageview');
+  </script>
+  <script async src="https://www.google-analytics.com/analytics.js"></script>
+
+  <link rel="apple-touch-icon" sizes="57x57" href="https://kawalpemilu.org/assets/logo/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="https://kawalpemilu.org/assets/logo/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="https://kawalpemilu.org/assets/logo/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="https://kawalpemilu.org/assets/logo/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="https://kawalpemilu.org/assets/logo/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="https://kawalpemilu.org/assets/logo/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="https://kawalpemilu.org/assets/logo/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="https://kawalpemilu.org/assets/logo/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://kawalpemilu.org/assets/logo/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="https://kawalpemilu.org/assets/logo/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://kawalpemilu.org/assets/logo/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="https://kawalpemilu.org/assets/logo/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://kawalpemilu.org/assets/logo/favicon-16x16.png">
+  <link rel="manifest" href="https://kawalpemilu.org/assets/logo/manifest.json">
+
+  <style type="text/css">
+    body,
+    html {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0px;
+      padding: 0px;
+      height: 100%;
+      width: 100%;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background: #607d8b;
+      margin: 0px;
+    }
+
+    header a {
+      display: inline-block;
+      color: white;
+      font-size: 26px;
+      background-image: url(https://upload.kawalpemilu.org/assets/logo/android-icon-72x72.png);
+      background-repeat: no-repeat;
+      background-position: top left;
+      padding: 15px 50px 15px 90px;
+      text-decoration: none;
+    }
+
+    main {
+      padding: 25px;
+      flex: 1;
+    }
+
+    h1 {
+      margin: 0px;
+    }
+
+    table.aggregate {
+      margin-top: 5px;
+    }
+
+    #navigasi {
+      margin: 10px 0;
+      white-space: nowrap;
+    }
+
+    #navigasi .nav {
+      color: black;
+    }
+
+    #navigasi a.nav {
+      color: blue;
+      text-decoration: none;
+    }
+
+    #navigasi a.nav:hover {
+      text-decoration: underline;
+    }
+
+    #navigasi span.sep {
+      padding: 0 5px;
+    }
+
+    #column_list {
+      margin: 10px 0;
+    }
+
+    .tps td {
+      white-space: nowrap;
+    }
+
+    .aggregate tr:nth-child(even) {
+      background: #EEE;
+    }
+
+    .aggregate tr:nth-child(odd) {
+      background: #FFF;
+    }
+
+    .aggregate tbody>tr:hover {
+      background-color: #CCF;
+    }
+
+    #header {
+      background-color: #CCC;
+    }
+
+    #header {
+      cursor: pointer;
+    }
+
+    .aggregate td {
+      padding: 5px;
+      font-size: 11px;
+    }
+
+    .aggregate thead>tr>th {
+      padding: 8px;
+      margin: 8px;
+      font-size: 12px;
+    }
+
+    .delta {
+      font-size: 9px;
+    }
+
+    .delta.complete {}
+
+    .delta.incomplete {
+      color: #888;
+    }
+
+    .aggregate tr.total td:first-child {
+      text-align: right;
+    }
+
+    .aggregate tr.total td {
+      background: #ccc;
+      font-weight: bold;
+    }
+
+    td.left {
+      text-align: left
+    }
+
+    td.right {
+      text-align: right
+    }
+
+    td.center {
+      text-align: center
+    }
+
+    td.error {
+      background: #ffcdd2;
+    }
+
+    #catatan {
+      max-width: 1024px;
+    }
+
+    #catatan li {
+      margin-bottom: 10px;
+      line-height: 28px;
+    }
+
+    #catatan span.error {
+      display: inline-block;
+      padding: 2px 15px;
+      background: #ffcdd2;
+    }
+
+    #catatan span.th {
+      display: inline-block;
+      padding: 2px 15px;
+      background: #ccc;
+    }
+
+    #catatan span.pending {
+      display: inline-block;
+      padding: 2px 15px;
+      background: #ffcc80;
+    }
+
+    .win {
+      background-color: "lightgreen";
+    }
+
+    .winmistake {
+      background-color: "lightgreen";
+      color: "red";
+    }
+
+    .lose {
+      background-color: "lightpink";
+    }
+
+    .losemistake {
+      background-color: "lightpink";
+    }
+
+    .mistake {
+      background-color: "lightpink";
+    }
+
+    .c1diff {
+      border: 2px solid red;
+    }
+
+    .red {
+      color: red;
+      font-weight: bold
+    }
+
+    #tipe {
+      margin: 10px 0 20px 0;
+    }
+
+    #tipe a {
+      padding: 10px 20px;
+      margin-right: 10px;
+      cursor: pointer;
+      display: inline-block;
+      text-decoration: none;
+      background: #e0e0e0;
+      color: black;
+      border-radius: 5px;
+      border-bottom: 1px solid #bdbdbd;
+    }
+
+    #tipe .active {
+      background: #616161;
+      color: white;
+      border-bottom: 1px solid #424242;
+    }
+
+    footer {
+      margin-top: 50px;
+      text-align: center;
+      background: #37474f;
+      color: white;
+    }
+
+    footer a {
+      color: white;
+      text-decoration: none;
+      padding: 7px 15px;
+      display: inline-block;
+    }
+
+    footer a:hover {
+      background: #62727b;
+    }
+
+    footer ul {
+      padding: 0;
+      margin: 0px;
+    }
+
+    footer ul li {
+      display: inline;
+    }
+
+    .photos p {
+      display: inline-block;
+      max-width: 120px;
+      overflow-x: hidden;
+      margin-right: 10px;
+      border: 1px solid #ccc;
+      padding: 3px;
+      background: white;
+    }
+
+    table.tpssum {
+      border-collapse: collapse;
+    }
+
+    table.tpssum tr:hover {
+      background-color: white;
+    }
+
+    tbody.tps td:nth-child(1) {
+      text-align: center;
+    }
+
+    tbody.tps td:nth-child(2) {
+      text-align: center;
+    }
+
+    tbody.tps p.tpsno {
+      font-weight: bold;
+      font-size: large;
+    }
+
+    tbody.tps .nodata {
+      text-align: center;
+      font-style: italic;
+    }
+
+    tbody.tps td.tabulasi {
+      padding: 0 10px;
+    }
+
+    tbody.tps td.tabulasi.neq {
+      background: #ffcdd2;
+    }
+
+    table.tpssum {
+      margin-top: 10px;
+      border-top: 2px solid #ccc;
+    }
+
+    table.tpssum th {
+      text-align: left;
+      padding: 5px 10px;
+      white-space: nowrap;
+    }
+
+    table.tpssum td {
+      text-align: left;
+      padding: 5px 10px;
+      white-space: nowrap;
+      border-right: 1px solid #ccc;
+    }
+
+    table.tpssum td:last-child {
+      border-right: 0px;
+    }
+
+    tbody.tps tr.pending td:first-child {
+      background: #ffcc80;
+    }
+
+    p.warn {
+      border: 1px solid #e57373;
+      background: #ffebee;
+      border-radius: 5px;
+      padding: 15px;
+      margin: 15px -15px;
+      display: block;
+    }
+
+    .help {
+      cursor: help;
+    }
+
+    tbody.tabulasi tr.datarow td .d {
+      font-size: smaller;
+    }
+
+    #tabulasi tr.init td {
+      padding: 50px 100px;
+      font-size: 18px;
+      background: #eee;
+      border-radius: 10px;
+      font-style: italic;
+    }
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    function xhr(url, cb) {
+      var oReq = new XMLHttpRequest();
+      oReq.addEventListener("load", function () {
+        cb(this.responseText);
+      });
+      oReq.open("GET", url);
+      oReq.send();
+    }
+
+    function get(id, cb) {
+      var url = 'https://kawal-c1.appspot.com/api/c/';
+      xhr(url + id + '?' + new Date().getTime(), function (res) {
+        cb(JSON.parse(res));
+      });
+    }
+
+    ! function render() {
+      var h = document.location.hash;
+      // '' -> default type=pilpres id=0
+      // '#4' -> default 'pilpres', id=4
+      // '#pilpres:4'
+      // '#pileg:4'
+      const tipeForms = {
+        'pilpres': 'PPWP',
+        'pileg': 'DPR',
+      }
+
+      var tipe = 'pilpres';
+      var id = 0;
+      var pc = h.indexOf(':')
+      if (h && h.length) {
+        if (pc >= 0) {
+          tipe = h.substring(1, pc)
+          id = h.substring(pc + 1);
+        } else {
+          id = h.substring(1);
+        }
+      }
+      tipe = tipe in tipeForms ? tipe : 'pilpres';
+      let tipeForm = tipeForms[tipe]
+      id = isNaN(id) ? 0 : id;
+
+      history.replaceState({}, 'Kawal Pemilu - Jaga Suara 2019', location.pathname + '#' + tipe + ':' + id)
+
+      get(id, function (c) {
+        // console.log(JSON.stringify(c, null, 2));
+        document.getElementById('tipe').innerHTML = renderTipe(tipe, id);
+        document.getElementById('navigasi').innerHTML = renderNavigasi(c, tipe);
+        var isHierarchyTable = c.depth < 4;
+        document.getElementById('tabulasi').innerHTML = isHierarchyTable ? renderHierarchy(c, tipe, tipeForm) : renderTps(c, tipe, tipeForm);
+        /*
+        if (isHierarchyTable) {
+          document.getElementById('column_list').innerHTML = renderColumnList();
+          for (var i = 2; i < columnNamesList.length; i++) {
+            hideShowColumn(i);
+          }
+        
+          $('#column_list').show();
+        } else {
+          
+          $('#column_list').hide();
+        }
+        */
+      });
+      setTimeout(render, 5000);
+    }();
+
+    function renderTipe(tipe, id) {
+      var R = function (t, n) {
+        return '<a href="#' + t + ':' + id + '" class="' + (t === tipe && 'active') + '">' + n + '</a>';
+      }
+      var s = '';
+      s += R('pilpres', 'Presiden')
+      s += R('pileg', 'DPR')
+      return s;
+    }
+
+    function renderNavigasi(c, tipe) {
+      var s = '';
+      for (var i = 0; i < c.parentIds.length; i++) {
+        var pid = c.parentIds[i];
+        var pname = c.parentNames[i];
+        s += '<a class="nav" href="#' + tipe + ':' + pid + '">' + pname + '</a> <span class="sep">&gt;</span> ';
+      }
+      s += '<span class="nav">' + c.name + '</span>';
+      return s;
+    }
+
+    var columnNamesList;
+
+
+    function renderColumnList() {
+
+      var s = '';
+      for (var i = 2; i < columnNamesList.length; i++) {
+        s += '<input type="checkbox" checked="checked" id="colCheckbox' + i + '"onclick="hideShowColumn(' + i + ')">' + columnNamesList[i] + '&nbsp;&nbsp;</input>';
+      }
+      return s;
+    }
+
+    function hideShowColumn(i) {
+      var checkbox = document.getElementById('colCheckbox' + i);
+      var index = i + 1;
+      if (checkbox.checked) {
+        $('td:nth-child(' + index + '),th:nth-child(' + index + ')').show();
+      } else {
+        $('td:nth-child(' + index + '),th:nth-child(' + index + ')').hide();
+      }
+    }
+
+    function renderHierarchy(c, tipe, tipeForm) {
+      let get_sum = function (d, key) {
+        return d && d.sum && d.sum[key] || 0;
+      };
+      let get_sum_fn = function (key) {
+        return (i, data) => get_sum(data, key)
+      };
+      let format_persen_fn = function (value) {
+        var p = Math.round(value[0] / value[1] * 10000) / 100
+        return p.toLocaleString('id') + '%'
+      };
+      let thousands = function (value) {
+        return value.toLocaleString('id')
+      }
+      let default_format_fn = function (value) {
+        return thousands(value)
+      };
+      let format_vanilla_fn = function (value) { return value; }
+
+      let acc_sum_fn = function (a, b) { return a + b }
+      let acc_empty_fn = function (a, b) { return '' }
+
+      let defaultEntry = {
+        format: default_format_fn,
+        class: 'right',
+        class_fn: function () { return '' },
+        acc_init: 0,
+        acc_fn: acc_sum_fn,
+        acc_format: default_format_fn,
+        acc_class: 'right',
+        title_fn: function () { return '' },
+        acc_title_fn: function () { return '' },
+      };
+
+      let columns = {
+        '@before': [
+          {
+            t: '#',
+            fn: function (i) { return i + 1; },
+            class: 'center',
+            acc_fn: acc_empty_fn,
+            acc_format: format_vanilla_fn,
+          },
+          {
+            t: 'Nama Wilayah',
+            fn: function (i) {
+              var cid = c.children[i][0];
+              var cname = c.children[i][1];
+              return '<a href="#' + tipe + ':' + cid + '">' + cname + '</a>';
+            },
+            format: format_vanilla_fn,
+            class: 'left',
+            acc_fn: acc_empty_fn,
+            acc_format: function () { return 'TOTAL' },
+            acc_class: 'right',
+          },
+        ],
+        '@after': [
+          {
+            t: '%TPS',
+            fn: function (i, data) {
+              return [
+                get_sum(data, 'cakupan'),
+                c.children[i][2]
+              ]
+            },
+            format: format_persen_fn,
+            acc_init: [0, 0],
+            acc_fn: function (a, b) { return [a[0] + b[0], a[1] + b[1]] },
+            acc_format: format_persen_fn,
+            title_fn: function (i, data) {
+              return thousands(get_sum(data, 'cakupan')) + ' dari ' + thousands(c.children[i][2]) + ' TPS'
+            },
+            acc_title_fn: function (value, i, data) {
+              return thousands(value[0]) + ' dari ' + thousands(value[1]) + ' TPS'
+            }
+          },
+          {
+            t: 'Belum Diproses',
+            fn: get_sum_fn('pending'),
+            format: function (value, i, data) {
+              return thousands(value)
+              // if (value === 0) return 0
+              // var p = Math.round(value / get_sum(data, 'cakupan') * 10000) / 100
+              // p = p.toLocaleString('id')
+              // return '<span>' + thousands(value) + '</span> <span class="d" style="width:40px; display: inline-block; text-align: left">&raquo; ' + p + '%</span>';
+            },
+          },
+          {
+            t: 'TPS Error',
+            fn: get_sum_fn('error')
+          },
+        ],
+        'pilpres': [
+          { t: 'Jokowi-Amin', fn: get_sum_fn('pas1') },
+          { t: 'Prabowo-Sandi', fn: get_sum_fn('pas2') },
+          {
+            t: 'Suara Sah', fn: get_sum_fn('sah'),
+            class_fn: function (i, data) {
+              var p1 = get_sum_fn('pas1')(i, data)
+              var p2 = get_sum_fn('pas2')(i, data)
+              var sum = get_sum_fn('sah')(i, data)
+              var calc = p1 + p2
+              if (sum === calc) return ''
+              return 'error help'
+            },
+            title_fn: function (i, data) {
+              var p1 = get_sum_fn('pas1')(i, data)
+              var p2 = get_sum_fn('pas2')(i, data)
+              var sum = get_sum_fn('sah')(i, data)
+              var calc = p1 + p2
+              if (sum === calc) return ''
+              return 'ada data suara sah yang tidak konsisten'
+            }
+          },
+          { t: 'Tidak Sah', fn: get_sum_fn('tSah') },
+        ],
+        'pileg': [
+          { t: 'PKB', fn: get_sum_fn('pkb') },
+          { t: 'Gerindra', fn: get_sum_fn('ger') },
+          { t: 'PDI', fn: get_sum_fn('pdi') },
+          { t: 'Golkar', fn: get_sum_fn('gol') },
+          { t: 'Nasdem', fn: get_sum_fn('nas') },
+          { t: 'Garuda', fn: get_sum_fn('gar') },
+          { t: 'Berkarya', fn: get_sum_fn('ber') },
+          { t: 'PKS', fn: get_sum_fn('sej') },
+          { t: 'Perindo', fn: get_sum_fn('per') },
+          { t: 'PPP', fn: get_sum_fn('ppp') },
+          { t: 'PSI', fn: get_sum_fn('psi') },
+          { t: 'PAN', fn: get_sum_fn('pan') },
+          { t: 'Hanura', fn: get_sum_fn('han') },
+          { t: 'Demokrat', fn: get_sum_fn('dem') },
+          { t: 'PA', fn: get_sum_fn('pa') },
+          { t: 'PS', fn: get_sum_fn('ps') },
+          { t: 'PDA', fn: get_sum_fn('pda') },
+          { t: 'PNA', fn: get_sum_fn('pna') },
+          { t: 'PBB', fn: get_sum_fn('pbb') },
+          { t: 'PKP', fn: get_sum_fn('pkp') },
+        ],
+      }
+
+      let cols = columns['@before'].concat(columns[tipe]).concat(columns['@after'])
+
+      var total = []
+      for (var j = 0; j < cols.length; j++) {
+        var entry = Object.assign({}, defaultEntry, cols[j])
+        total.push(entry.acc_init)
+      }
+
+      var sbody = ''
+      for (var i = 0; i < c.children.length; i++) {
+        var data = c.data[c.children[i][0]];
+        sbody += '<tr class="datarow">'
+        for (var j = 0; j < cols.length; j++) {
+          var entry = Object.assign({}, defaultEntry, cols[j])
+          var value = entry.fn(i, data)
+          total[j] = entry.acc_fn(total[j], value)
+          var formatted = entry.format(value, i, data)
+          var sortValue = $(value).text() ? $(value).text() : value
+          var css_class = entry.class + ' ' + entry.class_fn(i, data)
+          var title = entry.title_fn(i, data)
+          var title_attr = title && 'title="' + title + '"' || ''
+          sbody += '<td data-sort-index="' + j + '" data-sort="' + sortValue + '" class="' + css_class + '" ' + title_attr + '>' + formatted + '</td>'
+        }
+        sbody += '</tr>'
+      }
+
+      var stotal = ''
+      stotal += '<tr class="total">'
+      for (var j = 0; j < cols.length; j++) {
+        var entry = Object.assign({}, defaultEntry, cols[j])
+        var value = total[j];
+        var formatted = entry.acc_format(value)
+        var title = entry.acc_title_fn(value, i, data)
+        var title_attr = title && 'title="' + title + '"' || ''
+        stotal += '<td class="' + entry.acc_class + '" ' + title_attr + '>' + formatted + '</td>'
+      }
+      stotal += '<tr class="total"> <td colspan=2/><td class=right>' + ((total[2]/total[4])*100).toFixed(4)  + '%</td><td class=right>' + ((total[3]/total[4])*100).toFixed(4) + '%</td><td class=right>'+ Math.abs(total[2]-total[3]) +'</td><td class=right>' + ((total[5]/(total[4]+total[5]))*100).toFixed(2) + '%</td><td colspan=3/>'
+      stotal += '</tr>'
+
+      var s = ''
+      s += '<thead><tr class="header" id="header">'
+      for (var i = 0; i < cols.length; i++) {
+        s += '<th onclick="sort(' + i + ')">' + cols[i].t + '</th>'
+      }
+      s += stotal
+      s += '</thead>'
+
+      s += '<tbody class="tabulasi">' + sbody + '</tbody>'
+      s += '<tfoot>' + stotal + '</tfoot>'
+
+      return s
+    }
+
+    function tpsSum(key, data) {
+      return (data && data.sum && data.sum[key]) || 0;;
+    }
+
+    function summarize(key, data, sumKeys, sortIdx) {
+      var keys = sumKeys[key];
+      var result = '';
+      for (var j = 0; j < keys.length; j++) {
+        var key = keys[j];
+        var value = tpsSum(key, data);
+        var sortValue = ($(value).text()) ? $(value).text() : value;
+        result += '<td data-sort-index="' + (sortIdx + j) + '" data-sort="' + sortValue + '">' + format(value) + '</td>';
+      }
+      return result;
+    }
+
+    function header(tpsRow, group, keys, labels, keysSummary, labelsSummary, laporanUrl) {
+      if (!tpsRow) {
+        return '<p class="nodata">data belum tersedia</p>'
+      }
+
+      var available = false
+      for (var i = 0; i < keys.length; i++) {
+        available = available || !!tpsRow.sum[keys[i]]
+      }
+
+      if (!available) {
+        return '<p class="nodata">data belum tersedia</p>'
+      }
+
+      var R = function (kk, ll) {
+        var s = '';
+        for (var i = 0, j = 0; i < ll.length; i++) {
+          var label = ll[i];
+          if (label === '@') {
+            s += '</tr><tr>';
+            continue;
+          }
+
+          var key = kk[j++];
+          s += '<th>' + label + '</th><td>' + tpsSum(key, tpsRow) + '</td>';
+        }
+        return s;
+      };
+
+      var s = '';
+
+      s += '<table class="tpssum sum ' + group + '"><tr>'
+      s += R(keys, labels);
+      s += '</tr></table>';
+
+      s += '<table class="tpssum summary ' + group + '"><tr>'
+      s += R(keysSummary, labelsSummary);
+      s += '</tr></table>';
+
+      s += '<p class="lapor"><a href="' + laporanUrl + '" target="_blank">Laporkan kesalahan</a></p>';
+
+      return s;
+    }
+
+    function photos(tipeForm, tpsRow) {
+      if (!tpsRow) return '';
+
+      var formType = ['SKIP_ZERO', 'PPWP', 'DPR', 'DPD', 'DPRP', 'DPRPB', 'DPRA', 'DPRD_PROV', 'DPRD_KAB_KOTA', 'DPRK', 'OTHERS', 'MALICIOUS'];
+      var isPlano = ['SKIP_ZERO', 'YES', 'NO'];
+      var imageSize = '120';
+      var s = '<div class="photos">';
+      var urls = Object.keys(tpsRow.photos).filter(o => {
+        return formType[tpsRow.photos[o].c1.type] === tipeForm;
+      }).sort((a, b) => {
+        const pa = tpsRow.photos[a];
+        const pb = tpsRow.photos[b];
+        const ea = !!pa.sum.error ? 1 : 0;
+        const eb = !!pb.sum.error ? 1 : 0;
+        const va = ((ea - 1) * 100 + pa.c1.type * 10 + pa.c1.plano) * 1e14 + pa.ts;
+        const vb = ((eb - 1) * 100 + pb.c1.type * 10 + pb.c1.plano) * 1e14 + pb.ts;
+        return va - vb;
+      });
+      for (var j = 0; j < urls.length; j++) {
+        var url = urls[j];
+        var p = tpsRow.photos[url];
+        s += '<p>'
+        s += '<a href="' + url + '=s1280" target="_blank"><img src="' + url + '=s' + imageSize + '"></a>';
+        // s += '<br> Upload date: ' + new Date(p.ts) ;
+        // s += '<br> Tipe form: ' + formType[p.c1.type] ;
+        // s += '<br> Plano: ' + isPlano[p.c1.plano];
+        // s += '<br> Sum :' + JSON.stringify(p.sum);
+        // s += '<br> Raw :' + JSON.stringify(p);
+        s += '</p>';
+      }
+      s += '</div>';
+      return s;
+    }
+
+    function getLaporanUrl(hash, tps, tipe, kecamatan, kelurahan) {
+      return 'https://docs.google.com/forms/d/e/1FAIpQLSdeoAqXjE-gd_YpsvpzeD1Cr21hWgwKM8MHS8CYXNajD6iKGA/viewform?usp=pp_url&' +
+        'entry.1587204645=' + hash +
+        '&entry.446975413=' + tps +
+        '&entry.828908754=' + tipe +
+        '&entry.1325772197=' + kecamatan +
+        '&entry.789113286=' + kelurahan
+    }
+
+    function renderTps(c, tipe, tipeForm) {
+      var s = ''
+
+      var sumKeys = {
+        'pilpres': ['pas1', 'pas2'],
+        'pilpresSummary': ['sah', 'tSah', 'jum'],
+
+        'pileg': ['pkb', 'ger', 'pdi', 'gol', 'nas', 'gar', 'ber', 'sej', 'per', 'ppp', 'psi', 'pan', 'han', 'dem',
+          'pa', 'ps', 'pda', 'pna', // Partai lokal Aceh 
+          'pbb', 'pkp'],
+        'pilegSummary': ['pSah', 'pTSah', 'pJum'],
+        'tps': ['cakupan', 'pending', 'error', 'janggal'],
+      }
+      var sumLabels = {
+        'pilpres': ['Jokowi-Amin', '@', 'Prabowo-Sandi'],
+        'pileg': ['PKB', 'Gerindra', 'PDI', 'Golkar', 'Nasdem', '@',
+          'Garuda', 'Berkarya', 'PKS', 'Perindo', 'PPP', '@',
+          'PSI', 'PAN', 'Hanura', 'Demokrat',
+          'PA', '@', 'PS', 'PDA', 'PNA', // PARTAI LOKAL ACEH 
+          'PBB', 'PKP'],
+        'summary': ['Suara Sah', '@', 'Tidak Sah', '@', 'Pengguna Hak Pilih'],
+        'tps': ['Cakupan', 'Pending', 'Error', 'Janggal'],
+      };
+
+      s += '<thead class="tps"><tr class="header" id="header"><th>TPS & DPT</th><th>Hasil Perhitungan</th><th>Foto</th></tr></thead>';
+      s += '<tbody class="tps">'
+
+      var nTps = c.children.length;
+      // console.log('tps', c)
+
+      var hash = location.hash.length > 0 ? location.hash.substring(1) : '';
+
+      for (var i = 0; i < nTps; i++) {
+
+        var tpsRow = c.data[c.children[i][0]];
+        var tpsNo = c.children[i][0];
+        var nDPT = c.children[i][1] + c.children[i][2];
+
+        var pending = tpsSum('pending', tpsRow)
+        var pendingClass = pending ? 'pending' : ''
+
+        s += '<tr class="datarow ' + pendingClass + '">';
+        s += '<td><p class="tpsno">TPS ' + tpsNo + '</p>'
+        s += '<p>DPT: ' + nDPT + '</p></td>'
+
+        var laporanUrl = getLaporanUrl(hash, tpsNo, tipe, c.parentNames[c.parentNames.length - 1], c.name)
+
+        var labels = sumLabels[tipe]
+        var keys = sumKeys[tipe]
+        var sahKey = tipe === 'pilpres' ? 'sah' : 'pSah'
+        var total = 0;
+        for (var j = 0; j < keys.length; j++)
+          total += tpsSum(keys[j], tpsRow)
+        console.log('eq?', keys, total, sahKey, tpsSum(sahKey, tpsRow))
+        var tabClass = total === tpsSum(sahKey, tpsRow) ? 'eq' : 'neq'
+
+        s += '<td class="tabulasi ' + tabClass + '">';
+        s += header(tpsRow, tipe, keys, labels, sumKeys[tipe + 'Summary'], sumLabels['summary'], laporanUrl);
+        s += '</td><td>';
+        s += photos(tipeForm, tpsRow);
+        s += '</td>';
+
+        s += '</tr>';
+      }
+
+      s += '</tbody>'
+      return s;
+    }
+
+    var sortState = [1, 1];
+
+    function sort(i) {
+      var trs = $('table tr.datarow');
+      var tds = $(trs[0]).find('td');
+      var idx = 0;
+      for (var j = 0; j < tds.length; j++) {
+        if ($(tds[j]).data('sort-index') == i) {
+          idx = j + 1;
+          break;
+        }
+      }
+
+      var mul = 1;
+      if (sortState[0] === idx) {
+        mul = sortState[1] * -1;
+      }
+      sortState = [idx, mul];
+
+      trs.sort(function (a, b) {
+        var ka = $(a).find('td:nth-child(' + idx + ')').data('sort');
+        var kb = $(b).find('td:nth-child(' + idx + ')').data('sort');
+        if (!ka && !kb) return 0 * mul;
+        if (!ka && !!kb) return -1 * mul;
+        if (!!ka && !kb) return 1 * mul;
+        if (!!ka.localeCompare) return ka.localeCompare(kb) * mul;
+        return (ka - kb) * mul;
+      });
+      $(trs).detach();
+      ($($('table tbody')[0])).append($(trs));
+    }
+
+    function format(str) {
+      if (isNaN(str)) return str;
+      if (str == 0) return '0';
+      var nres = '' + str;
+      var res = '';
+      for (var i = 0; i < nres.length; i++) {
+        if (i > 0 && i % 3 == 0) {
+          res = '.' + res;
+        }
+        res = nres[nres.length - i - 1] + res;
+      }
+      return res;
+    }
+
+    window.onload = render;
+    window.onhashchange = render;
+  </script>
+</head>
+
+<body>
+  <header>
+    <a href="https://kawalpemilu.org/">Kawal Pemilu - Jaga Suara 2019</a>
+  </header>
+
+  <main>
+    <h1>Hasil Tabulasi Data Kawal Pemilu 2019</h1>
+    <p>Halaman ini berisi hasil tabulasi dari data yang sudah masuk ke
+      <a target="_blank" href="https://upload.kawalpemilu.org">upload.kawalpemilu.org</a>.</p>
+
+    <p>Data TPS kamu belum ada? Segera upload ke
+      <a target="_blank" href="https://upload.kawalpemilu.org">upload.kawalpemilu.org</a>!
+    </p>
+
+    <p class="warn">
+      Data pada halaman ini masih <strong>belum final</strong> dan akan terus diperbarui <strong>secara
+        berkala</strong>!
+      <br><br>
+      Terakhir diakses
+      <script>document.write(new Date());</script>
+    </p>
+
+    <div id="tipe"></div>
+    <div id="navigasi"></div>
+    <div id="column_list"></div>
+
+    <table class="aggregate" id="tabulasi">
+      <tr class="init">
+        <td>
+          <p>sedang membaca data&hellip;</p>
+        </td>
+      </tr>
+    </table>
+
+    <div id="catatan">
+      <h2>Catatan</h2>
+      <ul>
+        <li>
+          <span class="error">Suara Sah</span> atau <span class="error">Hasil Perhitungan</span>
+          berwarna merah menandakan adanya jumlah data suara kedua pasangan yang tidak sesuai dengan
+          data suara sah. Silakan drill down data lalu temukan dan laporkan data C1 yang bermasalah.
+        </li>
+        <li>
+          <span class="th">%TPS</span> mengindikasikan jumlah TPS yang sudah memiliki foto, terlepas
+          apakah foto tersebut sudah diproses atau belum.
+        </li>
+        <li>
+          <span class="th">Belum Diproses</span> berisi jumlah TPS yang memiliki foto
+          yang belum diproses.
+        </li>
+        <li>
+          <span class="th">TPS Error</span> berisi jumlah TPS yang memiliki laporan yang belum
+          ditindaklanjuti.
+        </li>
+        <li>
+          <span class="pending">TPS</span> pada halaman TPS yang diwarnai oranye artinya
+          memiliki data yang belum diproses.
+        </li>
+        <li>
+          <p>
+            Kawal Pemilu menggunakan <a href="https://en.wikipedia.org/wiki/Cache_(computing)"
+              target="_blank"><em>cache</em></a>
+            dalam menyediakan data tabulasi. Walau <em>cache</em> membantu agar data dapat
+            disajikan lebih cepat, penggunaan <em>cache</em> juga membuat data yang disajikan
+            bukan berasal dari versi paling mutakhir. Umur <em>cache</em> diatur berjenjang
+            dari hitungan beberapa menit untuk level nasional sampai 90 menit untuk level TPS.
+          </p>
+          <p>
+            Singkat kata, data pada level nasional akan dimutakhirkan lebih sering dibanding
+            data pada level TPS. Jika Anda melihat data level atas tidak sesuai dengan level
+            dalamnya, kemungkinan besar itu disebabkan oleh penggunaan <em>cache</em> berjenjang.
+          </p>
+        </li>
+      </ul>
+    </div>
+  </main>
+
+  <footer>
+    <ul>
+      <li><a target="_blank" href="https://kawalpemilu.org/tentang/">Tentang Kami</a></li>
+      <li><a target="_blank" href="https://kawalpemilu.org/faq/">Pertanyaan Umum</a></li>
+      <li><a target="_blank" href="https://kawalpemilu.org/privasi/">Kebijakan Privasi</a></li>
+      <li><a target="_blank" href="https://kawalpemilu.org/disclaimer/">Disclaimer</a></li>
+      <li><a target="_blank" href="https://kawalpemilu.org/kontak/">Kontak</a></li>
+    </ul>
+  </footer>
+
+
+
+</body></html>
