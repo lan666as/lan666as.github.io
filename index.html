@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="rtl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,33 +9,48 @@
 
     <style>
         body {
-            font-family: Times, serif;
+            font-family: "Times New Roman", Times, serif;
             line-height: 1.5;
             
-            max-width: 100ch;
+            max-width: 60ch;
             margin: auto;
-            padding: 2rem;
+            padding: 4rem 2rem;
 
             background-color: #fdfdfd;
             color: #333;
+
+            text-align: right;
+            direction: ltr;
         }
 
-        h1, h2 {
-            margin-top: 2em;
+        h1 {
+            font-weight: normal;
+            margin-bottom: 0.5em;
         }
-        
+
         a {
             color: #0056b3;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s;
         }
 
-        hr {
-            border: none;
-            border-top: 1px solid #ccc;
-            margin: 2em 0;
+        a:hover {
+            border-bottom-color: #0056b3;
         }
+
 
         ul {
-            padding-inline-start: 1.5em;
+            direction: rtl; 
+            padding-right: 1.5em;
+            padding-left: 0;
+            margin-top: 1em;
+        }
+
+        li {
+            direction: ltr;
+            text-align: right;
+            margin-bottom: 0.25em;
         }
     </style>
 </head>
@@ -50,6 +65,7 @@
                 <a href="mailto:me@zidan.dev">email</a> /
                 <a href="https://send.zidan.dev">send2ereader</a>
             </p>
+            <br>
             <p>
                 a living, breathing draft. some tenets:
             </p>
