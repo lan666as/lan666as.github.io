@@ -1,41 +1,104 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="a living, breathing draft.">
-    
     <title>ahmad zidan</title>
 
     <style>
+        :root {
+            --bg-color: #faf9f6; 
+            --text-color: #222; 
+        }
+
         body {
-            font-family: Times;
+            text-align: right; 
+            font-family: "Charter", "Bitstream Charter", "Sitka Text", Cambria, serif;
             line-height: 1.5;
             
-            max-width: 100ch;
-            margin: auto;
-            padding: 2rem;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+            max-width: 60ch;
+            margin: 0 0 0 auto; 
+            padding: 2rem 4rem; 
+            box-sizing: border-box;
 
-            background-color: #fdfdfd;
-            color: #333;
+            background-color: var(--bg-color);
+            color: var(--text-color);
         }
 
-        h1, h2 {
-            margin-top: 2em;
+        h1 {
+            font-weight: 400;
+            font-size: 2.5rem;
+            margin: 0 0 1rem 0;
+            letter-spacing: -0.02em;
         }
-        
+
+        nav {
+            margin-bottom: 2.5rem;
+            font-size: 1rem;
+        }
+
         a {
-            color: #0056b3;
+            color: var(--text-color);
+            text-decoration: none;
+            border-bottom: 1px solid #ccc;
         }
 
-        hr {
-            border: none;
-            border-top: 1px solid #ccc;
-            margin: 2em 0;
+        a:hover {
+            border-bottom-color: #000;
+        }
+
+        .separator {
+            color: #ccc;
+            margin: 0 0.3em;
+            user-select: none;
+        }
+
+        p {
+            margin: 0 0 1rem 0;
+            color: #444;
         }
 
         ul {
-            padding-left: 1.5em;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            color: #444;
+        }
+
+        li {
+            position: relative;
+            margin-bottom: 0.25em;
+            padding-right: 1.5em;
+        }
+
+        li::after {
+            content: "•";
+            position: absolute;
+            right: 0;
+            color: #ccc;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 2rem;
+                justify-content: flex-start;
+                margin: 0 auto;
+                text-align: left;
+            }
+            
+            li {
+                padding-right: 0;
+                padding-left: 1.5em;
+            }
+            li::after {
+                right: auto;
+                left: 0;
+            }
         }
     </style>
 </head>
@@ -44,21 +107,22 @@
     <main>
         <header>
             <h1>ahmad zidan</h1>
-            <p>
-                <a href="https://github.com/lan666as">github</a> / 
-                <a href="https://www.linkedin.com/in/a-zidan">linkedin</a> / 
-                <a href="mailto:me@zidan.dev">email</a> /
+            <nav>
+                <a href="https://github.com/lan666as">github</a> <span class="separator">/</span> 
+                <a href="https://www.linkedin.com/in/a-zidan">linkedin</a> <span class="separator">/</span> 
+                <a href="mailto:me@zidan.dev">email</a> <span class="separator">/</span>
                 <a href="https://send.zidan.dev">send2ereader</a>
-            </p>
-            <p>
-                a living, breathing draft. some tenets:
-            </p>
+            </nav>
+            
+            <p>a living, breathing draft. some tenets:</p>
+            
             <ul>
-                <li>gears over vibes;</li>
-                <li>legibility over cleverness; and</li>
-                <li>most importantly, a low cost to being wrong.</li>
+                <li>gears over vibes</li>
+                <li>legibility over cleverness</li>
+                <li>and most importantly, a low cost to being wrong</li>
             </ul>
         </header>
     </main>
+
 </body>
 </html>
